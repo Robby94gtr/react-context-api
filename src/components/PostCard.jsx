@@ -1,9 +1,11 @@
-import React from 'react'
-
-const PostCard = () => {
+function PostCard({ post }) {
     return (
-        <div>PostCard</div>
-    )
-}
+        <div>
+            <h2>{post.title}</h2>
+            <p>{post.content}</p>
+            <p>{post.category}</p>
+        </div>
+    );
+};
 
 export default PostCard
